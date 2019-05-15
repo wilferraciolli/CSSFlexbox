@@ -1,0 +1,54 @@
+html,body{
+    height: 100%;
+}
+
+ul#flex-container{
+    background-color: lightgrey;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    height: 300px;
+
+    /*flex*/
+    display: flex;
+    /*flex-direction: column;*/
+    /*flex-direction: row;*/
+    /*flex-direction: row-reverse;*/
+
+    /*flex-wrap: nowrap;!*Do not wrap any element on too the next row*!*/
+    flex-wrap: wrap;/*Do wrap any element on too the next row*/
+
+    /*justify-content: center; !*centralize*!*/
+    /*justify-content: flex-start; !*put everything on the left*!*/
+    /*justify-content: flex-end; !*put everything on the right*!*/
+    /*justify-content: space-between; !*put spaces to fill the gaps in between the elements*!*/
+    /*justify-content: space-between; !*put spaces to fill the gaps on all of them*!*/
+
+    /* Vertical align */
+    /*align-items: center;!*align itens vertically on the middle*!*/
+    align-items: stretch; /*stretch to fill the container*/
+    /*align-items: baseline; !*Puts it at the bottom*!*/
+    /*align-items: flex-start;!*align itens vertically on the top left*!*/
+    /*align-items: flex-end;!*align itens vertically on the bottom right*!*/
+}
+
+ul li{
+    /*height: 150px;*/
+    width: 100px;
+    padding-top: 45px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2.2em;
+    text-align: center;
+
+    /*flex*/
+    /*flex-grow: 1; !*make every component to occupy the whole space*!*/
+}
+
+ul li:first-child {background: #c2d775;}
+ul li:nth-child(2) {background: #007278;}
+ul li:nth-child(3) {background: #c7b600; align-self: flex-end;}
+ul li:nth-child(4) {background: #a90077;}
+ul li:nth-child(5) {background: #00a378;}
+ul li:last-child {background: #00ea72;}
