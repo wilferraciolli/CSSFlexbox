@@ -13,17 +13,34 @@
 
 </head>
 <body>
+<header>
+    <!-- Nav bar -->
+    <div class="child">
+        <img src="images/logo.png">
+    </div>
 
-<div id="container">
-    <ul id="flex-container">
-        <li><a href="#"><div class="magnify"> </div><span>Cultura</span><img src="images/thumb-1.jpg"/> </a> </li>
-        <li><a href="#"><div class="magnify"> </div><span>Cultura</span><img src="images/thumb-2.jpg"/> </a> </li>
-        <li><a href="#"><div class="magnify"> </div><span>Cultura</span><img src="images/thumb-3.jpg"/> </a> </li>
-        <li><a href="#"><div class="magnify"> </div><span>Cultura</span><img src="images/thumb-4.jpg"/> </a> </li>
-        <li><a href="#"><div class="magnify"> </div><span>Cultura</span><img src="images/thumb-5.jpg"/> </a> </li>
-        <li><a href="#"><div class="magnify"> </div><span>Cultura</span><img src="images/thumb-6.jpg"/> </a> </li>
+    <!-- Menu -->
+    <ul class="child">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
     </ul>
-</div>
+
+    <!-- Search -->
+    <div class="child">
+        <img src="images/magnify1.png" id="magnify">
+        <input type="text" name="search" id="search">
+    </div>
+
+<!-- Content -->
+    <div class="container">
+        <h1>Flexwesome</h1>
+
+        <p>Coupling of BCs and feature teams - team A may make a change to their schema unaware that team B have a dependency on the same schema.
+            Environment Creation issues - because schema A has views on schema B, schema B must be created first. This means it's not possible to simply ask all BCs to create their schema at the same time. Creation must occur in the right order or errors will occur.</p>
+    </div>
+</header>
 
 <script src="js/foundation.min.js"></script>
 <script>
