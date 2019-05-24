@@ -91,6 +91,7 @@ h1, p {
     #search {
         width: 80%;
         margin: 0 auto;
+        justify-content: center;
     }
 }
 
